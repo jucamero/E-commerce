@@ -1,0 +1,28 @@
+
+.body-container {
+   
+background-color: lightgray;
+height: 100vh; /* Altura del 100% de la ventana */
+      
+}
+
+
+.body {
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+  }
+  
+  .body h2 {
+    color: #333;
+    font-size: 3em; 
+    margin-bottom: 2px;
+  }
+  
+  .body p {
+    color: #555;
+  }
+  
