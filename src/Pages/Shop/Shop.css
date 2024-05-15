@@ -1,0 +1,50 @@
+.shop-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .shop-container h2 {
+    color: black;
+    text-align: center;
+  }
+  
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  /*Es el marco*/
+  .product {
+    border: 1px solid #219ebc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .product img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain; /* Ajusta la imagen para llenar el contenedor */
+  }
+  
+  
+  
+  .product h3 {
+    margin: 0;
+  }
+  
+  .product p {
+    margin: 0; /* Elimina el margen del párrafo */
+    font-weight: bold;
+  }
+
+  .loading {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 18px;
+    color: #333;
+  }
+
+
+

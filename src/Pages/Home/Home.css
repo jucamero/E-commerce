@@ -1,0 +1,28 @@
+
+.home-container {
+   
+    background-color: white;
+    height: 100vh; /* Altura del 100% de la ventana */
+          
+    }
+    
+    
+    .home {
+        background-color: white;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+      }
+      
+      .home h2 {
+        color: #333;
+        font-size: 3em; 
+        margin-bottom: 2px;
+      }
+      
+      .home p {
+        color: #555;
+      }
+      

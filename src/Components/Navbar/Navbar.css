@@ -1,7 +1,7 @@
 
 /*Este es el fondo de todo el div de los titulos*/
 .main-container{
-    background-color: #4DBBFA;
+    background-color: #219ebc;
 }
 
 /*Estilos de la barra de navegación*/
@@ -49,6 +49,12 @@
  cursor: pointer;
 
  }
+
+ /*Estilos del link aplicado en la lista de la barra de nav, pone color negro y quita la raya de link */
+ .nav-menu li a {
+    text-decoration: none;
+    color: black;
+  }
 
  /*Estilo de la linea al seleccionar una de las listas*/
  .nav-menu hr {
