@@ -1,9 +1,13 @@
-import './Shop.css'
-import React, { useState, useEffect } from 'react'
+import './Shop.css';
+import React, { useState, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import accionesDelCarrito from "../../Slicers/Slicers";
 
 const Shop = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [productCounters, setProductCounters] = useState({});
+  const dispatch = useDispatch();
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -12,13 +16,29 @@ const Shop = () => {
         const data = await response.json();
         setProducts(data);
         setLoading(false);
+        // Inicializa el contador del producto
+        const counters = {};
+        data.forEach(product => {
+          counters[product.id] = 0;
+        });
+        setProductCounters(counters);
       } catch (error) {
-        console.error('Error fetching products: ', error);
+        console.error('Error ', error);
       }
     };
 
     fetchProducts();
   }, []);
+
+  const handleAgregarAlCarrito = (product) => {
+    console.log("Agregando al carrito", product.id);
+    dispatch(accionesDelCarrito.agregarAlCarrito(product));
+    // Incrementa el contador del producto:
+    setProductCounters(prevCounters => ({
+      ...prevCounters,
+      [product.id]: prevCounters[product.id] + 1
+    }));
+  };
 
   return (
     <div className="shop-container">
@@ -32,7 +52,11 @@ const Shop = () => {
               <img src={product.image} alt={product.title} />
               <h3>{product.title}</h3>
               <p>{product.price} $</p>
-
+              
+              <button
+                className="button"
+                onClick={() => handleAgregarAlCarrito(product)}>Añadir</button>
+                <p>Cantidad: {productCounters[product.id]}</p>
             </div>
           ))}
         </div>
