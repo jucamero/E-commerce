@@ -56,7 +56,7 @@ const Shop = () => {
               <button
                 className="button"
                 onClick={() => handleAgregarAlCarrito(product)}>Añadir</button>
-                <p>Cantidad: {productCounters[product.id]}</p>
+                <p className="quantity">Cantidad: {productCounters[product.id]}</p>
             </div>
           ))}
         </div>

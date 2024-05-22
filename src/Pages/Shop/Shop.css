@@ -46,5 +46,23 @@
     color: #333;
   }
 
-
+  .button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #218838;
+  }
+  
+  .quantity {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
 

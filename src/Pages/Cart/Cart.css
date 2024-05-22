@@ -1,0 +1,121 @@
+.cart-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .cart-container p {
+    text-align: center;
+    color: #666;
+  }
+  
+  .cart-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .cart-container li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-container li img {
+    max-width: 100px;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+  
+  .cart-container li div {
+    flex-grow: 1;
+  }
+  
+  .cart-container h3 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .cart-container li p {
+    margin: 5px 0;
+  }
+  
+  .cart-container button {
+    background-color: #ff5a5f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cart-container button:hover {
+    background-color: #ff7b7f;
+  }
+  
+  /* Estilos para el formulario de pago */
+  .payment-form {
+    margin-top: 20px;
+  }
+  
+  .payment-form h3 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .payment-form input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .payment-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .payment-form button:hover {
+    background-color: #0056b3;
+  }
+
+  
+Claro, aquí tienes una versión actualizada del CSS que mejora el aspecto del subtotal y limita el número de decimales a dos:
+
+css
+Copiar código
+/* Estilos para el subtotal */
+.subtotal {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.subtotal p {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.subtotal span {
+  font-weight: bold;
+  color: #ff5a5f;
+}
